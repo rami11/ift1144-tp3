@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TP3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/index.css"
+    />
+    <!-- <script src="main.js"></script> -->
+  </head>
+  <body>
+    <h1>Travail Pratique #3</h1>
+    <h2>Identification</h2>
+    <p>
+      Ce travail a été fait par <em>Rami Serapian</em> matricule:
+      <em>20086424</em>
+    </p>
+
+    <!-- Partie 1 -->
+    <div id="part1">
+      <h2>Partie 1: Affichage et animation des images</h2>
+      <div>
+        <img src="img/salade.jpg" alt="Plat de salade" />
+
+        <div class="inline-block">
+          <div>
+            <label for="salad">Salade</label>
+            <input type="radio" name="dish" id="salad" value="salade" />
+          </div>
+          <div>
+            <label for="spaghetti">Spaghetti</label>
+            <input type="radio" name="dish" id="spaghetti" value="spaghetti" />
+          </div>
+          <div>
+            <label for="ice-cream">Crème glacée</label>
+            <input
+              type="radio"
+              name="dish"
+              id="ice-cream"
+              value="crème glacée"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partie 2 -->
+    <div id="part2">
+      <h2>Partie 2: Affichage dans la page Web contrôlé par Javascript</h2>
+      <div>
+        <label for="name">Nom: </label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="level">Niveau (1 à 6): </label>
+        <input type="text" name="level" id="level" />
+        <input type="button" value="Afficher partie 2" />
+      </div>
+      <p>Afficher ici</p>
+    </div>
+
+    <!-- Partie 3 -->
+    <div id="part3">
+      <h2>Partie 3: Formulaire de conversion</h2>
+      <div>
+        <label for="convert">Valeur:</label>
+        <input type="number" name="convert" id="convert" />
+        <label for="result">Résulat ici</label>
+        <span>Some result</span>
+      </div>
+      <div>
+        <input type="button" value="Pouces vers cm" />
+        <input type="button" value="Cm vers pouces" />
+        <input type="button" value="Celcius vers Farenheit" />
+        <input type="button" value="Farenheit vers Celcius" />
+      </div>
+    </div>
+
+    <!-- Partie 4 -->
+    <div id="part4">
+      <h2>Partie 4: JQuery (cliquez ici)</h2>
+    </div>
+
+    <footer>
+      <a href="http://validator.w3.org/check/referer" target="_blank"
+        ><img alt="validate html icon" src="img/valid_html_blue.png"
+      /></a>
+      <a
+        class="align-right"
+        href="http://jigsaw.w3.org/css-validator/check/referer"
+        target="_blank"
+        ><img alt="validate css icon" src="img/valid_css_blue.png"
+      /></a>
+    </footer>
+  </body>
+</html>
