@@ -10,6 +10,6 @@ a.align-right {
   float: left;
 }
 
-.inline-block {
-  display: inline-block;
+#part1 > div {
+  display: flex;
 }

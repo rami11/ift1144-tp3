@@ -10,7 +10,6 @@
       media="screen"
       href="css/index.css"
     />
-    <!-- <script src="main.js"></script> -->
   </head>
   <body>
     <h1>Travail Pratique #3</h1>
@@ -24,24 +23,38 @@
     <div id="part1">
       <h2>Partie 1: Affichage et animation des images</h2>
       <div>
-        <img src="img/salade.jpg" alt="Plat de salade" />
+        <img id="img-dish" src="img/salade.jpg" alt="Plat de salade" />
 
         <div class="inline-block">
           <div>
             <label for="salad">Salade</label>
-            <input type="radio" name="dish" id="salad" value="salade" />
+            <input
+              type="radio"
+              name="dish"
+              id="radio-salad"
+              value="salade"
+              onclick="onDishRadioClick(this)"
+              checked="checked"
+            />
           </div>
           <div>
             <label for="spaghetti">Spaghetti</label>
-            <input type="radio" name="dish" id="spaghetti" value="spaghetti" />
+            <input
+              type="radio"
+              name="dish"
+              id="radio-spaghetti"
+              value="spaghetti"
+              onclick="onDishRadioClick(this)"
+            />
           </div>
           <div>
             <label for="ice-cream">Crème glacée</label>
             <input
               type="radio"
               name="dish"
-              id="ice-cream"
+              id="radio-icecream"
               value="crème glacée"
+              onclick="onDishRadioClick(this)"
             />
           </div>
         </div>
@@ -98,4 +111,6 @@
       /></a>
     </footer>
   </body>
+
+  <script src="js/index.js"></script>
 </html>
