@@ -1,19 +1,20 @@
+#part1 > div {
+  display: flex;
+}
+
+#part4 p,
 #part4 h2 {
+  background-color: #e5eecc;
+  border: 1px solid #c3c3c3;
+}
+
+#part4 h2 {
+  padding: 5px;
   cursor: pointer;
-  background-color: yellowgreen;
 }
 
 #part4 p {
-  background-color: yellowgreen;
-  padding: 30px;
-}
-
-a.align-right {
-  float: right;
-}
-
-.align-left {
-  float: left;
+  padding: 50px;
 }
 
 img#img-dish {
@@ -21,6 +22,18 @@ img#img-dish {
   height: 155px;
 }
 
-#part1 > div {
-  display: flex;
+footer p {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
 }
