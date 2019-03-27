@@ -28,7 +28,7 @@ $(document).ready(function() {
     let nameValue = $("#text-name").val();
     let levelValue = $("#text-level").val();
 
-    $("#result-part2").css({ color: "#0f0" });
+    $("#result-part2").css({ color: "darkgreen" });
     switch (levelValue) {
       case "1":
         $("#result-part2").html(
