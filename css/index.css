@@ -2,6 +2,11 @@
   background-color: yellowgreen;
 }
 
+#part4 p {
+  padding: 30px;
+  background-color: yellowgreen;
+}
+
 a.align-right {
   float: right;
 }

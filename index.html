@@ -11,6 +11,7 @@
       href="css/index.css"
     />
     <script src="js/jquery-3.3.1.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="js/index.js"></script>
   </head>
   <body>
@@ -66,19 +67,19 @@
     <!-- Partie 2 -->
     <div id="part2">
       <h2>Partie 2: Affichage dans la page Web contrôlé par Javascript</h2>
-      <form onsubmit="onFormSubmit">
+      <form id="form-part2" action="javascript:void(0); onFormSubmit()">
         <div>
           <label for="name">Nom: </label>
-          <input type="text" name="name" id="name" />
+          <input type="text" id="text-name" />
         </div>
         <br />
         <div>
           <label for="level">Niveau (1 à 6): </label>
-          <input type="text" name="level" id="level" />
+          <input type="text" id="text-level" />
           <input type="submit" value="Afficher partie 2" />
         </div>
       </form>
-      <p id="h-name">Afficher ici</p>
+      <p id="result-part2">Afficher ici</p>
     </div>
 
     <!-- Partie 3 -->
@@ -100,6 +101,9 @@
     <!-- Partie 4 -->
     <div id="part4">
       <h2>Partie 4: JQuery (cliquez ici)</h2>
+      <div>
+        <p>Voilà le contenu de la partie 4, cliquez de nouveau sur le titre</p>
+      </div>
     </div>
 
     <footer>
