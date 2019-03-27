@@ -51,9 +51,7 @@ $(document).ready(function() {
   }
 
   /* Part 4 */
-  // $("#part4 div").hide();
-
-  $("#part4 h2").on("click", function() {
+  $("#part4 h2").click(function() {
     $("#part4 div").slideToggle();
   });
 });
