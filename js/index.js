@@ -6,27 +6,22 @@ $(document).ready(function() {
     iceCreamImgPath: "img/cremeglacee.jpg"
   };
 
-  function onDishRadioClick(dishRadio) {
-    switch (dishRadio.id) {
-      case "radio-salad":
-        document.getElementById("img-dish").src = dishImgs.saladImgPath;
-        break;
-      case "radio-spaghetti":
-        // document.getElementById("img-dish").src = dishImgs.spaghettiImgPath;
-        $("#img-dish").src(dishImgs.spaghettiImgPath);
-        break;
-      case "radio-icecream":
-        document.getElementById("img-dish").src = dishImgs.iceCreamImgPath;
-        break;
-      default:
-        document.getElementById("img-dish").src = dishImgs.saladImgPath;
-    }
-  }
+  $("#radio-salad").click(function() {
+    $("#img-dish").attr("src", dishImgs.saladImgPath);
+  });
+
+  $("#radio-spaghetti").click(function() {
+    $("#img-dish").attr("src", dishImgs.spaghettiImgPath);
+  });
+
+  $("#radio-icecream").click(function() {
+    $("#img-dish").attr("src", dishImgs.iceCreamImgPath);
+  });
 
   /* Part 2 */
   $("#form-part2").submit(function(event) {
-    alert("Handler for .submit() called.");
     event.preventDefault();
+    onFormSubmit();
   });
 
   function onFormSubmit() {

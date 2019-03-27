@@ -1,10 +1,11 @@
 #part4 h2 {
+  cursor: pointer;
   background-color: yellowgreen;
 }
 
 #part4 p {
-  padding: 30px;
   background-color: yellowgreen;
+  padding: 30px;
 }
 
 a.align-right {
