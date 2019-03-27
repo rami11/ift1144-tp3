@@ -1,3 +1,4 @@
+/* Part 1 */
 const dishImgs = {
   saladImgPath: "img/salade.jpg",
   spaghettiImgPath: "img/spaghetti.jpg",
@@ -19,3 +20,9 @@ function onDishRadioClick(dishRadio) {
       document.getElementById("img-dish").src = dishImgs.saladImgPath;
   }
 }
+
+/* Part 2 */
+const onFormSubmit = function(event) {
+  event.preventDefault();
+  console.log("hi");
+};
