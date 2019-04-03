@@ -6,25 +6,36 @@ $(document).ready(function() {
     iceCreamImgPath: "img/cremeglacee.jpg"
   };
 
-  $("#radio-salad").click(function() {
-    $("#img-dish").attr("src", dishImgs.saladImgPath);
-  });
+  const part1 = $("div#part1");
 
-  $("#radio-spaghetti").click(function() {
-    $("#img-dish").attr("src", dishImgs.spaghettiImgPath);
-  });
+  $(part1)
+    .find("input[type=radio]#radio-salad")
+    .click(function() {
+      $("#img-dish").attr("src", dishImgs.saladImgPath);
+    });
 
-  $("#radio-icecream").click(function() {
-    $("#img-dish").attr("src", dishImgs.iceCreamImgPath);
-  });
+  $(part1)
+    .find("input[type=radio]#radio-spaghetti")
+    .click(function() {
+      $("#img-dish").attr("src", dishImgs.spaghettiImgPath);
+    });
+
+  $(part1)
+    .find("input[type=radio]#radio-icecream")
+    .click(function() {
+      $("#img-dish").attr("src", dishImgs.iceCreamImgPath);
+    });
 
   /* Part 2 */
-  $("#form-part2").submit(function(event) {
-    event.preventDefault();
-    const form = event.currentTarget;
+  const part2 = $("div#part2");
 
-    onFormSubmit(form);
-  });
+  $(part2)
+    .find("#form-part2")
+    .submit(function(event) {
+      event.preventDefault();
+
+      onFormSubmit(event.currentTarget);
+    });
 
   function onFormSubmit(form) {
     let nameValue = $("#text-name").val();
@@ -62,6 +73,19 @@ $(document).ready(function() {
   }
 
   /* Part 3 */
+  const part3 = $("div#part3");
+
+  $(part3)
+    .find("button#inch2cm")
+    .click(function() {
+      $(part3)
+        .find("span")
+        .html(
+          $(part3)
+            .find("#value2convert")
+            .val() * 2.5
+        );
+    });
 
   /* Part 4 */
   $("#part4 h2").click(function() {
