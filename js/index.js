@@ -21,56 +21,47 @@ $(document).ready(function() {
   /* Part 2 */
   $("#form-part2").submit(function(event) {
     event.preventDefault();
-    onFormSubmit();
+    const form = event.currentTarget;
+
+    onFormSubmit(form);
   });
 
-  function onFormSubmit() {
+  function onFormSubmit(form) {
     let nameValue = $("#text-name").val();
     let levelValue = $("#text-level").val();
 
-    $("#result-part2").css({ color: "darkgreen" });
     switch (levelValue) {
       case "1":
-        $("#result-part2").html(
-          "<h1>Bonjour " + nameValue + " niveau=" + levelValue + "</h1>"
-        );
-        break;
       case "2":
-        $("#result-part2").html(
-          "<h2>" + nameValue + " niveau=" + levelValue + "</h2>"
-        );
-        break;
       case "3":
-        $("#result-part2").html(
-          "<h3>" + nameValue + " niveau=" + levelValue + "</h3>"
-        );
-        break;
       case "4":
-        $("#result-part2").html(
-          "<h4>" + nameValue + " niveau=" + levelValue + "</h4>"
-        );
-        break;
       case "5":
-        $("#result-part2").html(
-          "<h5>" + nameValue + " niveau=" + levelValue + "</h5>"
-        );
-        break;
       case "6":
-        $("#result-part2").html(
-          "<h6>" + nameValue + " niveau=" + levelValue + "</h6>"
-        );
-        break;
       case "7":
-        $("#result-part2").html(
-          "<h7>" + nameValue + " niveau=" + levelValue + "</h7>"
-        );
+        $(form)
+          .find("#result-part2")
+          .css({ color: "darkgreen" })
+          .html(
+            "<h" +
+              levelValue +
+              ">Bonjour " +
+              nameValue +
+              " niveau=" +
+              levelValue +
+              "</h" +
+              levelValue +
+              ">"
+          );
         break;
       default:
-        $("#result-part2")
+        $(form)
+          .find("#result-part2")
           .css({ color: "#f00" })
           .html("<p>Erreur le niveau doit être 1 et 6</p>");
     }
   }
+
+  /* Part 3 */
 
   /* Part 4 */
   $("#part4 h2").click(function() {
