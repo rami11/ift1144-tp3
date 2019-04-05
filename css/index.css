@@ -1,5 +1,6 @@
-#part1 > div {
-  display: flex;
+div#dish-chooser > div {
+  display: inline-block;
+  vertical-align: top;
 }
 
 #part4 p,

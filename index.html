@@ -24,10 +24,11 @@
     <!-- Partie 1 -->
     <div id="part1">
       <h2>Partie 1: Affichage et animation des images</h2>
-      <div>
-        <img id="img-dish" src="img/salade.jpg" alt="Plat de salade" />
-
-        <div class="inline-block">
+      <div id="dish-chooser">
+        <div>
+          <img id="img-dish" src="img/salade.jpg" alt="Plat de salade" />
+        </div>
+        <div>
           <div>
             <label for="radio-salad">Salade</label>
             <input
@@ -35,7 +36,8 @@
               name="dish"
               id="radio-salad"
               value="salade"
-              checked="checked"
+              onclick="onSaladRadioClick()"
+              checked
             />
           </div>
           <div>
@@ -45,6 +47,7 @@
               name="dish"
               id="radio-spaghetti"
               value="spaghetti"
+              onclick="onSpaghettyRadioClick()"
             />
           </div>
           <div>
@@ -54,6 +57,7 @@
               name="dish"
               id="radio-icecream"
               value="crème glacée"
+              onclick="onIceCreamRadioClick()"
             />
           </div>
         </div>
