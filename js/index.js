@@ -17,8 +17,8 @@ function onIceCreamRadioClick() {
 
 // Part 2
 function onShowPart2ButtonClick() {
-  const name = document.getElementById("field-name").value;
-  const level = document.getElementById("field-level").value;
+  let name = document.getElementById("field-name").value;
+  let level = document.getElementById("field-level").value;
 
   if ([1, 2, 3, 4, 5, 6, 7].includes(parseInt(level))) {
     document.getElementById("result-part2").style.color = "#0f0";
@@ -35,11 +35,42 @@ function onShowPart2ButtonClick() {
   } else {
     document.getElementById("result-part2").style.color = "#f00";
     document.getElementById("result-part2").innerHTML =
-      "<p>Erreur le niveau doit être 1 et 6</p>";
+      "Erreur le niveau doit être entre 1 et 6";
   }
 }
 
 // Part 3
+function convertInch2Cm() {
+  let valueToConvert = document.getElementById("value2convert").value;
+
+  let result = parseFloat(valueToConvert) * 2.5;
+  document.getElementById("result-part3").innerHTML =
+    "pouces ===> " + result + " cm";
+}
+
+function convertCm2Inch() {
+  let valueToConvert = document.getElementById("value2convert").value;
+
+  let result = parseFloat(valueToConvert) / 2.5;
+  document.getElementById("result-part3").innerHTML =
+    "cm ===> " + result + " pouces";
+}
+
+function convertCelsiusToFahrenheit() {
+  let valueToConvert = document.getElementById("value2convert").value;
+
+  let result = ((parseFloat(valueToConvert) * 9) / 5 + 32).toFixed(1);
+  document.getElementById("result-part3").innerHTML =
+    "celsius ===> " + result + " fahrenheit";
+}
+
+function convertFahrenheit2Celsius() {
+  let valueToConvert = document.getElementById("value2convert").value;
+
+  let result = (((parseFloat(valueToConvert) - 32) * 5) / 9).toFixed(1);
+  document.getElementById("result-part3").innerHTML =
+    "fahrenheit ===> " + result + " celsius";
+}
 
 // Part 4
 $(function() {

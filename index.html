@@ -80,7 +80,7 @@
           onclick="onShowPart2ButtonClick()"
         />
       </p>
-      <div id="result-part2">Affichage ici</div>
+      <p id="result-part2">Affichage ici</p>
     </div>
 
     <!-- Partie 3 -->
@@ -88,14 +88,18 @@
       <h2>Partie 3: Formulaire de conversion</h2>
       <div>
         <label for="convert">Valeur:</label>
-        <input type="number" name="value2convert" id="value2convert" />
-        <span>Résulat ici</span>
+        <input type="number" id="value2convert" />
+        <span id="result-part3">Résulat ici</span>
       </div>
       <div>
-        <button id="inch2cm">Pouces vers cm</button>
-        <button id="cm2inch">Cm vers pouces</button>
-        <button id="c2f">Celsius vers Fahrenheit</button>
-        <button id="f2c">Fahrenheit vers Celsius</button>
+        <button id="inch2cm" onclick="convertInch2Cm()">Pouces vers cm</button>
+        <button id="cm2inch" onclick="convertCm2Inch()">Cm vers pouces</button>
+        <button id="c2f" onclick="convertCelsiusToFahrenheit()">
+          Celsius vers Fahrenheit
+        </button>
+        <button id="f2c" onclick="convertFahrenheit2Celsius()">
+          Fahrenheit vers Celsius
+        </button>
       </div>
     </div>
 

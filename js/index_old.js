@@ -68,7 +68,7 @@ $(document).ready(function() {
         $(form)
           .find("#result-part2")
           .css({ color: "#f00" })
-          .html("<p>Erreur le niveau doit être 1 et 6</p>");
+          .html("<p>Erreur le niveau doit être entre 1 et 6</p>");
     }
   }
 
