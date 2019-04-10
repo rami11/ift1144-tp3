@@ -1,7 +1,7 @@
 // Part 1
-saladImgSrc = "img/salade.jpg";
-spaghettiImgSrc = "img/spaghetti.jpg";
-iceCreamImgSrc = "img/cremeglacee.jpg";
+const saladImgSrc = "img/salade.jpg";
+const spaghettiImgSrc = "img/spaghetti.jpg";
+const iceCreamImgSrc = "img/cremeglacee.jpg";
 
 function onSaladRadioClick() {
   document.getElementById("img-dish").src = saladImgSrc;
